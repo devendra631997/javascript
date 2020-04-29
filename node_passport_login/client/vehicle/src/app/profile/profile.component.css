@@ -1,0 +1,8 @@
+.body{
+    background-color: bisque;
+    color: brown;
+    background-image: url(img.jpg);
+    image-resolution: 100px;
+    image-orientation: from-image;
+
+}

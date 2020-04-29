@@ -1,0 +1,70 @@
+<!-- <p>dashboard works!</p>
+<h1>Angular 5 HttpClient Demo App</h1>
+  <h2>Foods</h2>
+  <ul>
+    <li *ngFor="let food of foods">{{food.name}}</li>
+  </ul>
+  <input type="button" value="show data" (click)="showfood()"> -->
+  
+  <head>
+  </head>
+  <body>   
+  <div class="body">
+    <div class="navbar">
+    
+        
+        <button class="bt" type="button" ><a href="https:localhost:5001/user/login">Profile</a></button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <button  class="bt" type="button" ><a  href="https:localhost:5001/user/register" >Profile</a></button>
+          
+        
+    <marquee behavior="" direction="rtl">
+      <h3 style="color: antiquewhite; float: centre;">
+        <span class="glyphicon glyphicon-car"></span>
+        <i class="fa fa-car" aria-hidden="true"></i>
+
+        vehicle status tracking and accident detection
+      </h3></marquee> 
+       
+   
+        
+    </div>
+        <div class="sidebar">
+          <br><br>
+          <div   class="alert1 "  >
+            <label for="vibration">vibration</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="vib" id="vib"  value="{{foods[0].name}}" onload="showfood()"><br><br>
+            <label for="Temperature">Temperature</label>&nbsp;
+            <input type="text" name="temp" value="{{foods[1].name}}" id="temp"><br><br>
+        </div>
+        
+          </div>
+         
+        <div class="track" (onload)="showfood()">
+          
+            <button type="button" > get location</button>
+            <!-- <input type="hidden" id="custId" name="custId" value="location"> -->
+            <p>lattiude:{{foods[2].lat}} longitude:{{foods[2].long}}</p>
+            </div>
+       <div class="stats">
+        <h1>Stats for this month</h1>
+        <p>Total trips</p>
+        <div class="container">
+          <div class="skills trips">90%</div>
+          
+        </div>
+        
+        <p>Total distance travelled </p>
+        <div class="container">
+          <div class="skills travelled">80%</div>
+        </div>       
+        <p>Monthly average trips</p>
+        <div class="container">
+          <div class="skills average">60%</div>
+        </div>
+        </div>
+        
+        
+  </div>
+</body>
